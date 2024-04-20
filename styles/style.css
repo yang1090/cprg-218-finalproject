@@ -1,0 +1,478 @@
+body {
+    margin: 0;
+}
+
+p {
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+}
+
+/* Nav bar style */
+nav {
+    background-color: #6d0102;
+    display: grid;
+    height: 100px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.navbar {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    margin-right: 5rem;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    padding: 2rem;
+    width: 80px;
+    text-align: center;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.navbar a:hover {
+    background-color: white;
+    color: #6d0102;
+    font-weight: 600;
+    transition: all 0.4s ease;
+}
+
+nav img {
+    margin: auto;
+    margin-left: 5rem;
+}
+
+@media only screen and (max-width: 768px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    nav img {
+        margin: auto;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding-bottom: 2rem;
+    }
+
+    .navbar a {
+        padding: 1rem;
+    }
+}
+/* End of nav bar style */
+
+/* Hero banner */
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(36, 36, 36, 0.5)), url(../img/hero.jpg);
+    height: 500px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+}
+
+.hero-container h1,h2 {
+    padding-left: 5rem;
+    padding-right: 10rem;
+    width: auto;
+    color: white;
+}
+
+.hero-container h1 {
+    font-family: "Raleway", Helvetica, Arial, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 40pt;
+    line-height: 60px;
+}
+
+.hero-container h2 {
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 16pt;
+    line-height: 40px;
+}
+
+.hero-container button {
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    border-style: none;
+    width: 250px;
+    height: 60px;
+    padding: 12px 24px;
+    background-color: #a31718;
+    font-size: 0.8rem;
+    margin-left: 5rem;
+    margin-top: 1.5rem;
+}
+
+.hero-container button a {
+    text-decoration: none;
+    color: white;
+    font-size: 12pt;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.hero-container button:hover{
+    background-color: white;
+    color: #a31718;
+    transition: all 0.4s ease;
+}
+
+.hero-container button a:hover {
+    color: #a31718;
+}
+
+.button:focus-visible {
+    outline: 3px solid orange;
+    outline-offset: 3px;
+}
+
+@media only screen and (max-width: 768px) {
+    .hero-container {
+        height: 600px;
+    }
+
+    .hero-container h1 {
+        text-align: center;
+        padding-top: 5rem;
+        padding-right: 3rem;
+        padding-left: 3rem;
+        font-size: 32pt;
+    }
+
+    .hero-container h2 {
+        text-align: center;
+        padding-right: 3rem;
+        padding-left: 3rem;
+        font-size: 14pt;
+    }
+
+    .hero-container button {
+        margin: auto;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+}
+/* End of hero banner style */
+
+/* Content */
+.content-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 6rem;
+    padding: 6rem 6rem;
+}
+
+.content {
+    text-align: center;
+}
+
+.content-container img {
+    width: 80px;
+    display: block;
+    margin: auto;
+    padding-bottom: 1.5rem;
+}
+
+.content-container h3 {
+    font-family: "Raleway", Helvetica, Arial, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 14pt;
+}
+
+.content-container p {
+    font-weight: 300;
+    font-size: 12pt;
+    line-height: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    .content-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content {
+        padding-bottom: 5rem;
+    }
+}
+/* End of content style */
+
+/* Video */
+.video-container {
+    background-color: #eeeeee;
+}
+
+.card-container h2 {
+    color: black;
+    text-align: center;
+    padding: 0;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    font-family: "Raleway", Helvetica, Arial, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 16pt;
+    line-height: 40px;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    text-decoration-color: #a31718;
+}
+
+.card-container p {
+    padding-bottom: 2rem;
+    font-weight: 300;
+    font-size: 12pt;
+    line-height: 20px;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+}
+
+.card {
+    position: relative;
+    width: auto;
+    padding-bottom: 56.25%;
+}
+
+.card-container {
+    display: grid;
+    padding: 0;
+    margin: 0;
+    margin-right: 15rem;
+    margin-left: 15rem;
+    padding-bottom: 5rem;
+}
+
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+    .card-container {
+        margin-right: 3rem;
+        margin-left: 3rem;
+    }
+}
+/* End of video style */
+
+/* accordion style */
+.accordion-container {
+    padding-bottom: 3rem;
+}
+
+.accordion-container h2 {
+    text-align: center;
+    color: black;
+    padding: 0;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    font-family: "Raleway", Helvetica, Arial, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 16pt;
+    line-height: 40px;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    text-decoration-color: #a31718;
+}
+
+.accordion {
+    color: black;
+    background-color: white;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    cursor: pointer;
+    padding: 2rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    width: 80%;
+    margin: auto;
+    border: none;
+    border-bottom: 1px solid #6d0102;
+    text-align: left;
+    font-size: 1rem;
+    transition: 0.4s;
+    display: grid;
+    grid-template-columns: 10fr 1fr;
+}
+ 
+.active, .accordion:hover {
+    background-color: #eeeeee;
+    color: #6d0102;
+    font-weight: 600;
+    border: none;
+    border-bottom: 1px solid #6d0102;
+}
+
+.accordion:after {
+    font-family: "FontAwesome";
+    font-weight: 900;
+    content: '\f5ce';
+    color: #6d0102;
+    float: right;
+    margin: auto;
+}
+
+.active:after {
+    content: "\f4e3";
+}
+  
+.panel {
+    background-color: #eeeeee;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    width: 80%;
+    margin: auto;
+}
+  
+.accordion-container p {
+    margin-bottom: 2rem;
+    padding-top: 1rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    color: black;
+    font-weight: 300;
+    font-size: 12pt;
+    line-height: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    .accordion {
+        width: 100%;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    .panel {
+        width: 100%;
+    }
+}
+/* end of accordion style */
+
+/* Footer */
+.footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #6d0102;
+}
+
+.footer-container h2 {
+    color: white;
+    text-align: center;
+    padding: 0;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    font-family: "Raleway", Helvetica, Arial, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 16pt;
+    line-height: 40px;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    text-decoration-color: white;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.footer-container img {
+    margin: auto;
+    padding-bottom: 3rem;
+}
+
+.footerbar {
+    margin: auto;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 20px;
+    padding-bottom: 3rem;
+}
+
+.footerbar a {
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem 1rem;
+}
+
+.copyright {
+    margin-bottom: 2rem;
+    padding-top: 1rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    text-align: center;
+    color: white;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10pt;
+    grid-row-start: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.footerbar a:hover {
+    background-color: white;
+    color: #6d0102;
+    font-weight: 600;
+    transition: all 0.4s ease;
+}
+
+@media only screen and (max-width: 768px) {
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-container h2 {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    .footerbar {
+        text-align: center;
+        margin: auto;
+        padding: 0;
+        padding-bottom: 3rem;
+    }
+}
+/* End of accordion style */

@@ -1,0 +1,152 @@
+/* form style */
+input, select, textarea {
+  color: #5A5A5A;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  margin: 0;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+form {
+    width: 600px;
+    margin: auto;
+}
+
+.underline {
+    border-bottom: solid 2px #474544;
+    margin: -0.512em auto;
+    width: 80px;
+}
+
+.email {
+	float: right;
+	width: 45%;
+}
+
+input[type='text'], [type='email'], select, textarea {
+	background: none;
+    border: none;
+	border-bottom: solid 2px #474544;
+	color: #474544;
+	font-size: 1.000em;
+    font-weight: 400;
+    letter-spacing: 1px;
+	margin: 0em 0 1.875em 0;
+	padding: 0 0 0.875em 0;
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+input[type='text']:focus, [type='email']:focus, textarea:focus {
+	outline: none;
+	padding: 0 0 0.875em 0;
+}
+
+.message {
+	float: none;
+}
+
+.name {
+	float: left;
+	width: 45%;
+}
+
+.subject {
+    width: 100%;
+}
+
+.telephone {
+    width: 100%;
+}
+
+textarea {
+    line-height: 150%;
+    height: 150px;
+    resize: none;
+    width: 100%;
+}
+
+button {
+    border: none;
+    outline: 0;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    display: block;
+    width: 300px;
+    margin: auto;
+    border-style: none;
+    height: 60px;
+    background-color: #a31718;
+    font-size: 12pt;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-style: normal;
+}
+
+button:hover {
+    background-color: #360000;
+    font-weight: 600;
+    transition: all 0.4s ease;
+}
+
+@media only screen and (max-width: 768px) {
+    form {
+        width: 100%;
+        margin: auto;
+    }
+
+    .name {
+        width: 100%;
+    }
+
+    .email {
+        width: 100%;
+    }
+}
+/* end of form style */
+
+/* map style */
+.google-map {
+    padding-bottom: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+  
+.google-map iframe {
+    height: 80%;
+    width: 100%;
+    margin: auto;
+    position: absolute;
+}
+
+.map-container h2 {
+    color: black;
+    text-align: center;
+    padding: 0;
+    padding-bottom: 3rem;
+    font-family: "Raleway", Helvetica, Arial, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 16pt;
+    line-height: 40px;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    text-decoration-color: #a31718;
+}
+/* end of map style */

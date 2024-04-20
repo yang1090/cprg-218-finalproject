@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles/style.css">
+  <link rel="stylesheet" type="text/css" href="styles/style-winelist.css">
+  <link rel="stylesheet" type="text/css" href="styles/style-contact.css">
+  <script src="https://kit.fontawesome.com/1b89f93bc8.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <title>Vino Verve</title>
+</head>
+
+<body>
+  <nav>
+    <img src="img/Vino Verve logo-04.png" height="80px" alt="Vino Verve Logo">
+    <ul class="navbar">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="wine-list.html">Wine List</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero-container">
+      <h1>Get in Touch with Vino Verve</h1>
+      <h2>Ask us about our wines, orders, or events. Our team is here to help!</h2>
+  </header>
+
+  <main class="content-container">
+    <h2>Let us know your opinion</h2>
+    <div class="container">
+      <form id="contact_form">
+        <div class="name">
+          <input type="text" placeholder="Name" name="name" id="name_input" required>
+        </div>
+        <div class="email">
+          <input type="email" placeholder="Email" name="email" id="email_input" required>
+        </div>
+        <div class="telephone">
+          <input type="text" placeholder="Contact number" name="telephone" id="telephone_input" required>
+        </div>
+        <div class="subject">
+          <select placeholder="Subject line" name="subject" id="subject_input" required>
+            <option disabled hidden selected>Subject line</option>
+            <option>I'd like to provide suggestions</option>
+            <option>I'd like to ask a question</option>
+            <option>I'd like to make a proposal</option>
+          </select>
+        </div>
+        <div class="message">
+          <textarea name="message" placeholder="Your opinion..." id="message_input" cols="30" rows="5" required></textarea>
+        </div>
+        <div class="submit">
+        <button class="button with-fallback" type="button" id="btn-alert">Send Message</button>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <section class="map-container">
+    <h2>Visit our store in Calgary</h2>
+    <div class="google-map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2507.404134475012!2d-114.0933033032104!3d51.06408939999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53716f9268a69e81%3A0xb1db5e68bd61e28!2sSouthern%20Alberta%20Institute%20of%20Technology!5e0!3m2!1sen!2sca!4v1709707475940!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="1301 16 Ave NW, Calgary, AB T2M 0L4"></iframe>
+    </div>
+  </section>
+
+  <footer class="footer-container">
+    <h2>Visit Us and Discover More About Our Services</h2>
+    <img src="img/Vino Verve logo-04.png" height="100px" alt="Vino Verve Logo">
+    <ul class="footerbar">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="wine-list.html">Wine List</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="copyright">
+      &copy; Yang <span id="year"></span> Southern Alberta Institute of Technology - All Rights Reserved.
+    </div>
+  </footer>
+
+  <script src="js/scripts.js" defer></script>
+  <script src="js/contact-scripts.js" defer></script> 
+</body>
+</html>

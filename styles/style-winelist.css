@@ -1,0 +1,119 @@
+.hero-container {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(36, 36, 36, 0.5)), url(../img/winelist-banner.jpg);
+}
+
+/* content style */
+.content-container h2 {
+    color: black;
+    text-align: center;
+    padding: 0;
+    padding-bottom: 3rem;
+    font-family: "Raleway", Helvetica, Arial, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 16pt;
+    line-height: 40px;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    text-decoration-color: #a31718;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.content-container {
+    column-gap: 2rem;
+}
+
+.content-container .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 0;
+    margin: auto;
+    max-height: 900px;
+}
+
+.content-container h3 {
+    font-family: "Raleway", Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 18pt;
+}
+  
+.price {
+    color: grey;
+    font-size: 22pt;
+}
+  
+.content-container .card button {
+    border: none;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    border-style: none;
+    height: 60px;
+    background-color: #a31718;
+    font-size: 12pt;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-style: normal;
+}
+  
+.content-container .card button:hover {
+    background-color: #360000;
+    font-weight: 600;
+    transition: all 0.4s ease;
+}
+
+.content-container p {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .content-container {
+        row-gap: 3rem;
+    }
+}
+/* end of content style */
+
+/* cocktail section */
+.cocktail-container {
+    background-color: #eeeeee;
+}
+
+#cocktail-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    width: 400px;
+}
+
+.card-container button {
+    border: none;
+    outline: 0;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    width: 300px;
+    margin: auto;
+    border-style: none;
+    height: 60px;
+    background-color: #a31718;
+    font-size: 12pt;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-style: normal;
+}
+
+.card-container button:hover {
+    background-color: #360000;
+    font-weight: 600;
+    transition: all 0.4s ease;
+}
+
+.card-container img {
+    height: 400px;
+}
+/* end of cocktail section */

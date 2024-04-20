@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles/style.css">
+  <link rel="stylesheet" type="text/css" href="styles/style-winelist.css">
+  <script src="https://kit.fontawesome.com/1b89f93bc8.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <title>Vino Verve</title>
+</head>
+
+<body>
+  <nav>
+    <img src="img/Vino Verve logo-04.png" height="80px" alt="Vino Verve Logo">
+    <ul class="navbar">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="wine-list.html">Wine List</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero-container">
+      <h1>Explore Our Curated Wine Collection</h1>
+      <h2>Discover Exceptional Wines from Around the World</h2>
+  </header>
+
+  <main class="content-container">
+    <h2>Featured Wine Selections</h2>
+    <div class="card">
+      <img src="img/wine-1.jpg" alt="The wine bottle of Pater Toscana." style="width:100%">
+      <h3>Pater Toscana</h3>
+      <p class="price">$99.99</p>
+      <p>Cabernet Sauvignon</p>
+      <button class="button with-fallback" type="button" id="btn-alert">Add to Cart</button>
+    </div>
+    <div class="card">
+      <img src="img/wine-2.jpg" alt="The wine bottle of Portalegre." style="width:100%">
+      <h3>Portalegre</h3>
+      <p class="price">$69.99</p>
+      <p>Chardonnay</p>
+      <button class="button with-fallback" type="button" id="btn-alert">Add to Cart</button>
+    </div>
+    <div class="card">
+      <img src="img/wine-3.jpg" alt="The wine bottle of Bollinger." style="width:100%">
+      <h3>Bollinger</h3>
+      <p class="price">$89.99</p>
+      <p>Champagne</p>
+      <button class="button with-fallback" type="button" id="btn-alert">Add to Cart</button>
+    </div>
+  </main>
+
+  <section class="cocktail-container">
+    <ul class="card-container">
+      <h2>Random Cocktail</h2>
+      <p>Not a wine day? Pick a cocktail instead.</p>
+        <button id="fetch-cocktail" class="button with-fallback" type="button">Get a random cocktail</button>
+        <div id="cocktail-info">
+        </div>
+    </ul>
+  </section>
+
+  <section class="accordion-container">
+    <h2>Frequently Asked Questions</h2>
+    <button class="accordion">What is the return policy for purchased wines?</button>
+    <div class="panel">
+      <p>At Vino Verve, customer satisfaction is our top priority. If you are not completely satisfied with a wine purchase, please contact us within 14 days of purchase. We will work with you to offer a replacement, exchange, or refund based on your preference and the condition of the returned product.</p>
+    </div>
+
+    <button class="accordion">Do you offer wine delivery services?</button>
+    <div class="panel">
+      <p>Yes, Vino Verve offers convenient wine delivery services to your home or office. Delivery is available for local orders within our service area, and we also offer shipping options for other locations. Please check our delivery page for more information on rates and delivery times.</p>
+    </div>
+    
+    <button class="accordion">Can I schedule a private wine tasting event?</button>
+    <div class="panel">
+      <p>Absolutely! Vino Verve offers private wine tasting events for groups, perfect for celebrations, corporate events, or just a fun gathering with friends. Our team will work with you to customize the event based on your preferences and budget. Contact us for availability and to discuss your event in detail.</p>
+    </div>
+  </section>
+
+  <footer class="footer-container">
+    <h2>Visit Us and Discover More About Our Services</h2>
+    <img src="img/Vino Verve logo-04.png" height="100px" alt="Vino Verve Logo">
+    <ul class="footerbar">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="wine-list.html">Wine List</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="copyright">
+      &copy; Yang <span id="year"></span> Southern Alberta Institute of Technology - All Rights Reserved.
+    </div>
+  </footer>
+
+  <script src="js/scripts.js" defer></script>
+  <script src="js/api-scripts.js" defer></script> 
+</body>
+</html>
